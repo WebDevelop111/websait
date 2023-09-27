@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>MySaitVizitka</title>
+</head>
+<body>
+  <div class="container">
+        <button id="themeButton">Сменить тему</button>
+    </div>
+    <div class="box-title">
+      <h1>Визитка  WebDeveloper</h1>
+      <hr class="shadow-line">
+      </div>
+    <div class="box-about">
+      <h2>Введение в визитку</h2>
+      <p>Приветствую вас в моей визитке!<br>Сегодня я вам расскажу  о том,чего  я хочу добиться,и какой проект я хочу сделать по мимо  сайта визитки!<br>Так же,я  вам расскажу,как же я  познакомился с  такой профессией как <b>IT</b><br>И с какими  трудностями мне пришлось столкнуться,в ходе моего путишествия по миру IT  технологий</p>
+      <hr>
+    </div>
+    <div class="box-about-text">
+      <h3>История о том как я познакомился с  IT</h3>
+      <p>Приветствую вас слушатели, и  простые посетители моего сайта. Я в данном томе расскажу о том как я попал в IT.<br>Мой путь был не из легких (и если по правде,я не являюсь IT специалистом) моя цель была попробовать себя в IT сфере. По пути моего обучения,я стал понимать что я не смогу  существовать без программирования.<br>Я пробовал себя во многих языках,начиная с "<b>Python</b>" заканчивая "<b>NodeJs</b>" но данные языки мне давались с трудом,и я начал делать сайты на html+css,так как это на много проще и не требует каких либо  "сверх-знаний"<br>Ещё я сталкивался с буллингом со стороны IT  специалистов<br>
+      На этом мой рассказ окончен</p>
+      <hr>
+    </div>
+    <div class="box-about-text">
+      <h3>С чем мне пришлось столкнуться?</h3>
+      <p>Я шел к такому результату очень долго - мне приходилось сталкиваться с  различными ошибками в стилизации,оформлении,дизайне сайтов<br>Я делал всё чтобы изучить хоть какие-то основы <b>CSS (Custom Style Sheets)</b><br>ещё я сталкивался с  различным буллингом со стороны <b>Web-Разработчиков</b><br>Но я всё равно шёл дальше,и не останавливался!</p>
+      <hr>
+    </div>
+    <div class="your-info">
+      <h2>Информация обо мне</h2>
+      <p>Контакты для связи: <a href="https://vk.me/write755301660"><b>Вконтакте</b></a></p>
+      <p>Город: <b>Undefined</b></p>
+      <p>Место учёбы: ДПЭК</p>
+    </div>
+    <div class="pay-box">
+      <h3>Если тебе понравилась моя визитка,поддержки копеечкой!</h3>
+      <hr>
+      <p>Реквизиты для поддержки автора: <a href="https://qiwi.com/n/TMPROYT"><b>QIWI</b></a></p>
+    </div>
+  </div>
+</body>
+<script>
+ const themeButton = document.getElementById("themeButton");
+ const body = document.body;
+ const content = document.querySelector(".container"); 
+ themeButton.addEventListener("click", () => {
+  body.classList.toggle("dark-theme");
+  content.classList.toggle("dark-theme"); 
+});
+</script>
+</html>
